@@ -2,19 +2,17 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <>
-      <nav className="nav  costume-nav">
-        <Link to="/" className="site-title">
-          Duckenson Dodor
-        </Link>
-        <ul>
-          <CustomLink to="/portfolio">Portfolio</CustomLink>
-          <CustomLink to="/about">About Me</CustomLink>
-          <CustomLink to="/contact">Contact</CustomLink>
-          <CustomLink to="/resume">Resume</CustomLink>
-        </ul>
-      </nav>
-    </>
+    <nav className="nav  costume-nav">
+      <Link to="/" className="site-title">
+        Duckenson Dodor
+      </Link>
+      <ul>
+        <CustomLink to="/portfolio">Portfolio</CustomLink>
+        <CustomLink to="/about">About Me</CustomLink>
+        <CustomLink to="/contact">Contact</CustomLink>
+        <CustomLink to="/resume">Resume</CustomLink>
+      </ul>
+    </nav>
   );
 }
 

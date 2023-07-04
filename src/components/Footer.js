@@ -2,8 +2,8 @@ import { FaGithub, FaLinkedin,  } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <div>
-      <h1 className="footer">
+    <div className="footer">
+      <h1>
         <a href="https://github.com/dodor101" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>

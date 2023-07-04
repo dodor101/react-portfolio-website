@@ -1,8 +1,7 @@
 export default function Resume() {
- const  styleCard = {
-     width:' 18rem',
-
-  }
+  const styleCard = {
+    width: ' 18rem',
+  };
   return (
     <>
       <div>
@@ -34,6 +33,9 @@ export default function Resume() {
               <li className="list-group-item">Postman</li>
             </ul>
           </div>
+          <a href="https://docs.google.com/document/d/1fDb0PinjDHuc_--02G5cTlBzt33B_pxHV4lk_HGcWQE/edit#">
+            <div className="resume-link">View Resume</div>
+          </a>
         </div>
       </div>
     </>

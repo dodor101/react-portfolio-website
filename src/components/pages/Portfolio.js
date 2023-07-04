@@ -2,67 +2,48 @@ import noteTaker from '../../images/note-taker.png';
 import homeCooked from '../../images/homecooked.png';
 import activityFinder from '../../images/activity-finder.png';
 import diaryImage from '../../images/diary-app.png';
+import { Projects } from '../Projects';
+
+const projects = [
+  {
+    id: 1,
+    title: 'Note Taker',
+    image: noteTaker,
+    liveApp: 'https://diary-express.herokuapp.com/',
+    gitHubRpo: 'https://github.com/dodor101/note-taker',
+    alt: 'Note taker app screenshot',
+    description: 'This is a Note Taker App',
+  },
+  {
+    id: 2,
+    title: 'Homecooked',
+    image: homeCooked,
+    liveApp: 'https://homecooked.herokuapp.com/',
+    gitHubRpo: 'https://github.com/Solomon-Coding/Homecooked.git/',
+    alt: 'homecooked screenshot',
+    description: 'Homecooked is a Recipe Saver App',
+  },
+  //
+  {
+    id: 3,
+    title: 'Activity Finder',
+    image: activityFinder,
+    liveApp: 'https://dhoneck.github.io/activity-finder/',
+    gitHubRpo: 'https://github.com/dhoneck/activity-finder',
+    alt: 'Activity finder screenshot',
+    description: 'Activity Finder App',
+  },
+  {
+    id: 4,
+    title: 'Diary App',
+    image: diaryImage,
+    liveApp: 'https://best-note-taker.herokuapp.com/',
+    gitHubRpo: 'https://github.com/dodor101/diary-express-app',
+    alt: 'Diary app screenshot',
+    description: 'Diary App',
+  },
+];
 
 export default function Portfolio() {
-  return (
-    <div>
-      <div>
-        <h2 className="portfolio-head">Portfolio Websites</h2>
-      </div>
-      <div className="my-images">
-        <div className="one-image">
-          <h3>Note Taker</h3>
-          <a href="https://best-note-taker.herokuapp.com/" target="_blank " rel="noreferrer">
-            <img src={noteTaker} alt="Note taker app screenshot" />
-          </a>
-          <p className="image-card-p">This is a Note Taker App</p>
-          <small>
-            <a href="https://github.com/dodor101/note-taker" target="_blank" rel="noreferrer">
-              View Repository
-            </a>
-          </small>
-        </div>
-        <div className="one-image">
-          <h3>Homecooked</h3>
-          <a href="https://homecooked.herokuapp.com/" target="_blank" rel="noreferrer">
-            <img src={homeCooked} alt="homecooked screenshot" />
-          </a>
-          <p className="image-card-p">Homecooked is a Recipe Saver App </p>
-          <small>
-            <a
-              href="https://github.com/Solomon-Coding/Homecooked.git/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Repository
-            </a>
-          </small>
-        </div>
-        <div className="one-image">
-          <h3>Activity Finder</h3>
-          <a href="https://dhoneck.github.io/activity-finder/" target="_blank " rel="noreferrer">
-            <img src={activityFinder} alt="Activity finder screenshot" />
-          </a>
-          <p className="image-card-p">Activity Finder App</p>
-          <small>
-            <a href="https://github.com/dhoneck/activity-finder" target="_blank" rel="noreferrer">
-              View Repository
-            </a>
-          </small>
-        </div>
-        <div className="one-image">
-          <h3>Activity Finder</h3>
-          <a href="https://diary-express.herokuapp.com/" target="_blank" rel="noreferrer">
-            <img src={diaryImage} alt="Diary app screenshot" />
-          </a>
-          <p className="image-card-p">Diary App</p>
-          <small>
-            <a href="https://github.com/dodor101/diary-express-app" target="_blank" rel="noreferrer">
-              View Repository
-            </a>
-          </small>
-        </div>
-      </div>
-    </div>
-  );
+  return <Projects projects={projects} />;
 }

@@ -17,11 +17,11 @@ export const Projects = ({ projects }) => {
                       <img src={image} alt={alt} />
                     </a>
                     <p className="image-card-p">{description}</p>
-                    <small>
+                    <code>
                       <a href={gitHubRpo} target="_blank" rel="noreferrer">
                         View Repository
                       </a>
-                    </small>
+                    </code>
                   </div>
                 </div>
               </div>

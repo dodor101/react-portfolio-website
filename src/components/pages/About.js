@@ -1,4 +1,4 @@
-import image1 from '../../images/image4.png'
+import image1 from '../../images/image4.jpeg'
 export default function About() {
   return (
     <div>

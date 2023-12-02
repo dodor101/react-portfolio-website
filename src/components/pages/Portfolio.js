@@ -2,6 +2,8 @@ import noteTaker from '../../images/note-taker.png';
 import homeCooked from '../../images/homecooked.png';
 import activityFinder from '../../images/activity-finder.png';
 import diaryImage from '../../images/diary-app.png';
+import crowdFunding from '../../images/crowd-funding.png';
+import techBlog from '../../images/tech-blog.png';
 import { Projects } from '../Projects';
 
 const projects = [
@@ -41,6 +43,24 @@ const projects = [
     gitHubRpo: 'https://github.com/dodor101/diary-express-app',
     alt: 'Diary app screenshot',
     description: 'Diary App',
+  },
+  {
+    id: 5,
+    title: 'Crowd Funding',
+    image: crowdFunding,
+    liveApp: 'https://crowd-funds-f151b23ec542.herokuapp.com',
+    gitHubRpo: 'https://github.com/dodor101/crown-funding',
+    alt: 'Get Funding',
+    description: 'Get your amazing idea funded',
+  },
+  {
+    id: 6,
+    title: 'Tech Blog',
+    image: techBlog,
+    liveApp: 'https://tech-blog-best-e811fbc52e48.herokuapp.com/',
+    gitHubRpo: 'https://github.com/dodor101/tech-blog',
+    alt: 'tech blog',
+    description: 'Your tech opinions matter',
   },
 ];
 
